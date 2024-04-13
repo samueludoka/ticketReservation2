@@ -1,2 +1,10 @@
-package org.smartapplication.dtos.response;public class NotificationResponse {
+package org.smartapplication.dtos.response;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class NotificationResponse {
+    private String message;
 }

@@ -1,2 +1,10 @@
-package org.smartapplication.dtos.response;public class CustomerLoginResponse {
+package org.smartapplication.dtos.response;
+
+import lombok.Data;
+
+@Data
+public class CustomerLoginResponse {
+    private String password;
+
+
 }

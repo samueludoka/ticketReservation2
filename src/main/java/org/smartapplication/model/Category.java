@@ -1,2 +1,7 @@
-package org.smartapplication.model;public enum Category {
+package org.smartapplication.model;
+
+public enum Category {
+    CONCERT,
+    CONFERENCE,
+    GAMES
 }

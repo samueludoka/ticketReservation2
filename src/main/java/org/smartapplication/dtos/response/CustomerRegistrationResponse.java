@@ -1,10 +1,9 @@
-package org.smartapplication.dtos.request;
+package org.smartapplication.dtos.response;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+
+@Data
 public class CustomerRegistrationResponse {
-    private String message;
+    private Long id;
 }
