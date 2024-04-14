@@ -5,56 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d492f27f-24ab-42e2-b403-ffbb2b6a1ae9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/AddTicketRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/CreateLoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/CreateRegistrationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/CreateTicketRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/EventRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/NotificationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/UpdateCustomerRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/response/AddEventResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/response/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/response/CreateTicketResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/response/CustomerLoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/response/CustomerRegistrationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/response/CustomerResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/response/EventResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/response/NotificationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/response/UpdateCustomerResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/exception/CustomerNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/exception/InvalidDetailsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/exception/UserExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/model/CustomerNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/model/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/model/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/EventRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/TicketRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/EventService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/EventServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/NotificationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/TicketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/TicketServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/ticketReservation2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/CustomerServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/EventServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/NotificationServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/TicketServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/BookTicketRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/response/BookTicketResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/AddTicketRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/AddTicketRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/CustomerServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/CustomerServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/NotificationServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/NotificationServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/TicketServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/TicketServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +33,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -87,6 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.CustomerServiceImplTest.executor": "Run",
+    "JUnit.CustomerServiceImplTest.testThatCustomerCanBookTicket.executor": "Run",
     "JUnit.CustomerServiceImplTest.testThatCustomerCannotLoginWithWrongDetails.executor": "Run",
     "JUnit.CustomerServiceImplTest.testThatCustomersCanBeRegistered.executor": "Run",
     "JUnit.CustomerServiceImplTest.testThatRegisteredUserCanLogIn.executor": "Run",
@@ -95,6 +58,7 @@
     "JUnit.EventServiceImplTest.testCreateEvent.executor": "Run",
     "JUnit.NotificationServiceImplTest.sendNotificationToCustomer.executor": "Run",
     "JUnit.TicketServiceImplTest.addTicketToEvent.executor": "Run",
+    "JUnit.TicketServiceImplTest.executor": "Run",
     "JUnit.TicketServiceImplTest.testCreateTicket.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -108,7 +72,7 @@
     "Spring Boot.ticketReservation2.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Samuel/IdeaProjects/ticketReservation2/src/main/java/org/smartapplication/services",
@@ -128,9 +92,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.smartapplication.dtos.response" />
+      <recent name="org.smartapplication.dtos.request" />
       <recent name="org.smartapplication.exception" />
       <recent name="org.smartapplication.services" />
-      <recent name="org.smartapplication.dtos.request" />
       <recent name="org.smartapplication.model" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -143,7 +107,7 @@
       <recent name="org.smartapplication.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NotificationServiceImplTest.sendNotificationToCustomer">
+  <component name="RunManager" selected="JUnit.CustomerServiceImplTest.testThatCustomerCanBookTicket">
     <configuration name="CustomerServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ticketReservation2" />
       <extension name="coverage">
@@ -155,6 +119,22 @@
       <option name="PACKAGE_NAME" value="org.smartapplication.services" />
       <option name="MAIN_CLASS_NAME" value="org.smartapplication.services.CustomerServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceImplTest.testThatCustomerCanBookTicket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ticketReservation2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.smartapplication.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.smartapplication.services" />
+      <option name="MAIN_CLASS_NAME" value="org.smartapplication.services.CustomerServiceImplTest" />
+      <option name="METHOD_NAME" value="testThatCustomerCanBookTicket" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -183,6 +163,16 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
       <option name="PACKAGE_NAME" value="org.smartapplication.services" />
       <option name="MAIN_CLASS_NAME" value="org.smartapplication.services.NotificationServiceImplTest" />
       <option name="METHOD_NAME" value="sendNotificationToCustomer" />
@@ -191,7 +181,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketServiceImplTest.addTicketToEvent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TicketServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ticketReservation2" />
       <extension name="coverage">
         <pattern>
@@ -201,33 +191,16 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.smartapplication.services" />
       <option name="MAIN_CLASS_NAME" value="org.smartapplication.services.TicketServiceImplTest" />
-      <option name="METHOD_NAME" value="addTicketToEvent" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TicketServiceImplTest.testCreateTicket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ticketReservation2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.smartapplication.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.smartapplication.services" />
-      <option name="MAIN_CLASS_NAME" value="org.smartapplication.services.TicketServiceImplTest" />
-      <option name="METHOD_NAME" value="testCreateTicket" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerServiceImplTest.testThatCustomerCanBookTicket" />
         <item itemvalue="JUnit.NotificationServiceImplTest.sendNotificationToCustomer" />
-        <item itemvalue="JUnit.TicketServiceImplTest.addTicketToEvent" />
-        <item itemvalue="JUnit.TicketServiceImplTest.testCreateTicket" />
+        <item itemvalue="JUnit.TicketServiceImplTest" />
         <item itemvalue="JUnit.EventServiceImplTest.testCreateEvent" />
         <item itemvalue="JUnit.CustomerServiceImplTest" />
       </list>
@@ -257,6 +230,10 @@
       <workItem from="1712911903042" duration="3471000" />
       <workItem from="1712931567742" duration="1992000" />
       <workItem from="1712948196298" duration="4142000" />
+      <workItem from="1712971547954" duration="811000" />
+      <workItem from="1712974637233" duration="1237000" />
+      <workItem from="1713102671768" duration="181000" />
+      <workItem from="1713103024720" duration="8490000" />
     </task>
     <servers />
   </component>

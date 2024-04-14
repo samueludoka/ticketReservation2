@@ -37,6 +37,7 @@ class TicketServiceImplTest {
     @Test
     public void addTicketToEvent() throws Exception {
         AddTicketRequest request = new AddTicketRequest();
+        request.setId(100L);
         request.setReservationNumber("seat 001, row 001, column 050");
         request.setTicketQuantity("1");
         Event event = new Event();

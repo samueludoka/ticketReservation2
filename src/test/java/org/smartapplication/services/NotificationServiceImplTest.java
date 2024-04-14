@@ -20,15 +20,4 @@ class NotificationServiceImplTest {
     @Autowired
     private CustomerService customerService;
 
-    @Test
-    @Sql({"scripts/insert.sql"})
-    public void sendNotificationToCustomer() throws CustomerNotFoundException {
-        var notificationCount = customerService.getCustomerBy(1L).getNotification().size();
-        UpdateCustomerRequest updateCustomerRequest = new UpdateCustomerRequest();
-        updateCustomerRequest.setEmail("secondCustomer@gmail.com");
-        customerService.updateCustomer(1L, updateCustomerRequest);
-        var currentNotificationCount = customerService.getCustomerBy(1L).getNotification().size();
-        assertThat(currentNotificationCount).isGreaterThan(notificationCount);
-    }
-
 }

@@ -1,24 +1,16 @@
 package org.smartapplication.services;
 
-import com.github.fge.jsonpatch.JsonPatchOperation;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.smartapplication.dtos.request.CreateLoginRequest;
-import org.smartapplication.dtos.request.CreateRegistrationRequest;
-import org.smartapplication.dtos.request.UpdateCustomerRequest;
-import org.smartapplication.dtos.response.ApiResponse;
-import org.smartapplication.dtos.response.CustomerRegistrationResponse;
-import org.smartapplication.dtos.response.CustomerResponse;
-import org.smartapplication.dtos.response.UpdateCustomerResponse;
-import org.smartapplication.exception.CustomerNotFoundException;
+import org.smartapplication.dtos.request.*;
+import org.smartapplication.dtos.response.*;
 import org.smartapplication.exception.InvalidDetailsException;
+import org.smartapplication.model.Category;
 import org.smartapplication.model.Customer;
+import org.smartapplication.model.Ticket;
 import org.smartapplication.repository.CustomerRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.smartapplication.repository.TicketRepository;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @AllArgsConstructor
 @Service
@@ -28,6 +20,8 @@ public class CustomerServiceImpl implements CustomerService {
     private final ModelMapper mapper = new ModelMapper();
 
     private final NotificationService notificationService;
+
+    private final TicketRepository ticketRepository;
     @Override
     public CustomerRegistrationResponse createUserAccount(CreateRegistrationRequest request) {
         Customer customer = new Customer();
@@ -50,34 +44,26 @@ public class CustomerServiceImpl implements CustomerService {
         customerRepository.save(foundCustomer);
     }
 
-    @Override
-    public CustomerResponse getCustomerBy(Long id) throws CustomerNotFoundException {
-        return mapper.map(findCustomerBy(id), CustomerResponse.class);
-    }
-
-    @Override
-    public ApiResponse<UpdateCustomerResponse> updateCustomer(Long l, UpdateCustomerRequest updateCustomerRequest) {
-
-//        Customer customer = findCustomerBy(id);
-//
-//        List<JsonPatchOperation> jsonPatchOperations = new ArrayList<>();
-//        buildPatchOperation(updateCustomerRequest, jsonPatchOperations);
-//        customer = applyPatch(jsonPatchOperations, customer);
-//        customerRepository.save(customer);
-//        notify(id, notificationService.createNotification(new sendNotificationRequest(id, "account updated successfully")));
-
-        return null;
-    }
-
-    private Customer findCustomerBy(Long id) throws CustomerNotFoundException{
-        return customerRepository.findById(id)
-                .orElseThrow(() -> new CustomerNotFoundException(String.format("Customer with id %d not found", id)));
-    }
-
     private boolean userExist(String email) {
         Customer foundCustomer = customerRepository.findByEmail(email);
         return foundCustomer != null;
     }
 
+    @Override
+    public BookTicketResponse bookTicket(BookTicketRequest bookTicketRequest, AddTicketRequest ticketRequest) throws Exception {
+        Category searchTicket = categoryCheck(ticketRequest.getReservationNumber());
+        Ticket ticket = mapper.map(bookTicketRequest, Ticket.class);
+        Ticket savedTicket = ticketRepository.save(ticket);
+        return mapper.map(savedTicket, BookTicketResponse.class);
+    }
+
+    private Category categoryCheck(String reservationNumber) throws Exception{
+        for(Category cate : Category.values()){
+            if(cate.name().equalsIgnoreCase(reservationNumber)){
+                return cate;
+            }
+        }
+        throw new Exception("Category not Found");
+    }
 
 }

@@ -1,13 +1,7 @@
 package org.smartapplication.services;
 
-import org.smartapplication.dtos.request.CreateLoginRequest;
-import org.smartapplication.dtos.request.CreateRegistrationRequest;
-import org.smartapplication.dtos.request.UpdateCustomerRequest;
-import org.smartapplication.dtos.response.ApiResponse;
-import org.smartapplication.dtos.response.CustomerRegistrationResponse;
-import org.smartapplication.dtos.response.CustomerResponse;
-import org.smartapplication.dtos.response.UpdateCustomerResponse;
-import org.smartapplication.exception.CustomerNotFoundException;
+import org.smartapplication.dtos.request.*;
+import org.smartapplication.dtos.response.*;
 import org.smartapplication.exception.InvalidDetailsException;
 
 public interface CustomerService {
@@ -15,7 +9,5 @@ public interface CustomerService {
 
     void login(CreateLoginRequest request) throws InvalidDetailsException;
 
-    CustomerResponse getCustomerBy(Long id) throws CustomerNotFoundException;
-
-    ApiResponse<UpdateCustomerResponse> updateCustomer(Long id, UpdateCustomerRequest updateCustomerRequest);
+    BookTicketResponse bookTicket(BookTicketRequest bookTicketRequest, AddTicketRequest ticketRequest) throws Exception;
 }
