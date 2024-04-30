@@ -24,7 +24,7 @@ public class Event {
     private long id;
     private String name;
     private String eventDescription;
-    private int attendees;
+    private Integer attendees;
     private String email;
     private LocalDateTime createdAt;
     private Category category;

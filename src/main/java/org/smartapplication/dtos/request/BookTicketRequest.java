@@ -13,6 +13,6 @@ public class BookTicketRequest {
     private Category name;
     private String reservationNumber;
     private String ticketQuantity;
-    private LocalDateTime reservationDate;
+    private int reservationDate;
 
 }

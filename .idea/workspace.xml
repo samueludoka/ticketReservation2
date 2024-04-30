@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d492f27f-24ab-42e2-b403-ffbb2b6a1ae9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/BookTicketRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/response/BookTicketResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/AddTicketRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/AddTicketRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/BookTicketRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/BookTicketRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/CreateLoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/CreateLoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/model/CustomerNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/model/CustomerNotification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/CustomerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/CustomerServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/CustomerServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/NotificationServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/NotificationServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/TicketServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/TicketServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,49 +46,51 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.CustomerServiceImplTest.executor": "Run",
-    "JUnit.CustomerServiceImplTest.testThatCustomerCanBookTicket.executor": "Run",
-    "JUnit.CustomerServiceImplTest.testThatCustomerCannotLoginWithWrongDetails.executor": "Run",
-    "JUnit.CustomerServiceImplTest.testThatCustomersCanBeRegistered.executor": "Run",
-    "JUnit.CustomerServiceImplTest.testThatRegisteredUserCanLogIn.executor": "Run",
-    "JUnit.CustomerServiceImplTest.testThatRegisteredUserCannotLogInWithoutWrongDetails.executor": "Run",
-    "JUnit.CustomerServiceImplTest.testThatUserCanHaveAnAccount.executor": "Run",
-    "JUnit.EventServiceImplTest.testCreateEvent.executor": "Run",
-    "JUnit.NotificationServiceImplTest.sendNotificationToCustomer.executor": "Run",
-    "JUnit.TicketServiceImplTest.addTicketToEvent.executor": "Run",
-    "JUnit.TicketServiceImplTest.executor": "Run",
-    "JUnit.TicketServiceImplTest.testCreateTicket.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ticketReservation2.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/Samuel/IdeaProjects/ticketReservation2/src/main/java/org/smartapplication/services",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.CustomerServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceImplTest.testThatCustomerCanBookTicket.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceImplTest.testThatCustomerCannotLoginWithWrongDetails.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceImplTest.testThatCustomerCannotLoginWithWrongDetailsAfterRegistering.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceImplTest.testThatCustomersCanBeRegistered.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceImplTest.testThatRegisteredUserCanLogIn.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceImplTest.testThatRegisteredUserCannotLogInWithoutWrongDetails.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceImplTest.testThatUserCanHaveAnAccount.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EventServiceImplTest.testCreateEvent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NotificationServiceImplTest.sendNotificationToCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TicketServiceImplTest.addTicketToEvent.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TicketServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TicketServiceImplTest.testCreateTicket.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ticketReservation2.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Samuel/IdeaProjects/ticketReservation2/src/main/java/org/smartapplication/services&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Samuel/Documents/diary_repository/shoppersDelight&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.smartapplication.dtos.response" />
@@ -107,7 +109,7 @@
       <recent name="org.smartapplication.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerServiceImplTest.testThatCustomerCanBookTicket">
+  <component name="RunManager" selected="Spring Boot.ticketReservation2">
     <configuration name="CustomerServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ticketReservation2" />
       <extension name="coverage">
@@ -139,7 +141,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EventServiceImplTest.testCreateEvent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerServiceImplTest.testThatCustomerCannotLoginWithWrongDetailsAfterRegistering" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ticketReservation2" />
       <extension name="coverage">
         <pattern>
@@ -148,14 +150,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.smartapplication.services" />
-      <option name="MAIN_CLASS_NAME" value="org.smartapplication.services.EventServiceImplTest" />
-      <option name="METHOD_NAME" value="testCreateEvent" />
+      <option name="MAIN_CLASS_NAME" value="org.smartapplication.services.CustomerServiceImplTest" />
+      <option name="METHOD_NAME" value="testThatCustomerCannotLoginWithWrongDetailsAfterRegistering" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NotificationServiceImplTest.sendNotificationToCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerServiceImplTest.testThatCustomersCanBeRegistered" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ticketReservation2" />
       <extension name="coverage">
         <pattern>
@@ -163,25 +165,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </extension>
       <option name="PACKAGE_NAME" value="org.smartapplication.services" />
-      <option name="MAIN_CLASS_NAME" value="org.smartapplication.services.NotificationServiceImplTest" />
-      <option name="METHOD_NAME" value="sendNotificationToCustomer" />
+      <option name="MAIN_CLASS_NAME" value="org.smartapplication.services.CustomerServiceImplTest" />
+      <option name="METHOD_NAME" value="testThatCustomersCanBeRegistered" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TicketServiceImplTest.testCreateTicket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ticketReservation2" />
       <extension name="coverage">
         <pattern>
@@ -191,18 +183,26 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.smartapplication.services" />
       <option name="MAIN_CLASS_NAME" value="org.smartapplication.services.TicketServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testCreateTicket" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ticketReservation2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ticketReservation2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.smartapplication.ticketReservation2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CustomerServiceImplTest.testThatCustomerCanBookTicket" />
-        <item itemvalue="JUnit.NotificationServiceImplTest.sendNotificationToCustomer" />
-        <item itemvalue="JUnit.TicketServiceImplTest" />
-        <item itemvalue="JUnit.EventServiceImplTest.testCreateEvent" />
+        <item itemvalue="JUnit.CustomerServiceImplTest.testThatCustomerCannotLoginWithWrongDetailsAfterRegistering" />
         <item itemvalue="JUnit.CustomerServiceImplTest" />
+        <item itemvalue="JUnit.CustomerServiceImplTest.testThatCustomersCanBeRegistered" />
+        <item itemvalue="JUnit.CustomerServiceImplTest.testThatCustomerCanBookTicket" />
+        <item itemvalue="JUnit.TicketServiceImplTest.testCreateTicket" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +233,12 @@
       <workItem from="1712971547954" duration="811000" />
       <workItem from="1712974637233" duration="1237000" />
       <workItem from="1713102671768" duration="181000" />
-      <workItem from="1713103024720" duration="8490000" />
+      <workItem from="1713103024720" duration="9745000" />
+      <workItem from="1713119752581" duration="3056000" />
+      <workItem from="1713158166354" duration="2992000" />
+      <workItem from="1713166033262" duration="3923000" />
+      <workItem from="1713199723129" duration="1750000" />
+      <workItem from="1713225985791" duration="42000" />
     </task>
     <servers />
   </component>

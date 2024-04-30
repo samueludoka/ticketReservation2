@@ -17,4 +17,6 @@ public class CustomerNotification {
     private Long id;
     private String message;
 
+
+
 }

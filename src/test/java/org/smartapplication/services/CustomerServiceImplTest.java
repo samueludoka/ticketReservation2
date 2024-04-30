@@ -19,14 +19,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.*;
-@AllArgsConstructor
+import static org.smartapplication.model.Category.CONCERT;
+
+
 @SpringBootTest
 class CustomerServiceImplTest {
     @Autowired
     private CustomerRepository customerRepository;
     @Autowired
     private CustomerService customerService;
-    private final Category category;
+
 
 
 
@@ -61,9 +63,9 @@ class CustomerServiceImplTest {
         BookTicketRequest bookTicketRequest = new BookTicketRequest();
         AddTicketRequest ticketRequest = new AddTicketRequest();
         bookTicketRequest.setId(1L);
-        bookTicketRequest.setName(category.CONCERT);
+        bookTicketRequest.setName(CONCERT);
         bookTicketRequest.setReservationNumber("010");
-        bookTicketRequest.setReservationDate(LocalDateTime.parse("30|04|2024"));
+        bookTicketRequest.setReservationDate(30|04|2024);
         BookTicketResponse bookTicketResponse = customerService.bookTicket(bookTicketRequest, ticketRequest);
         assertNotNull(bookTicketResponse);
 

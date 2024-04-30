@@ -12,6 +12,8 @@ import org.smartapplication.repository.CustomerRepository;
 import org.smartapplication.repository.TicketRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @AllArgsConstructor
 @Service
 public class CustomerServiceImpl implements CustomerService {
@@ -24,6 +26,7 @@ public class CustomerServiceImpl implements CustomerService {
     private final TicketRepository ticketRepository;
     @Override
     public CustomerRegistrationResponse createUserAccount(CreateRegistrationRequest request) {
+        if (customerRepository.existsByEmail(request.getEmail())) throw new RuntimeException("email already exist ");
         Customer customer = new Customer();
         customer.setId(request.getId());
         customer.setName(request.getName());
@@ -38,8 +41,8 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public void login(CreateLoginRequest request)  {
         Customer foundCustomer = customerRepository.findByEmail(request.getEmail());
-        if(!userExist(request.getEmail())) throw new InvalidDetailsException();
-        if(!foundCustomer.getPassword().equals(request.getPassword())) throw new InvalidDetailsException();
+        if(!userExist(request.getEmail()))throw new InvalidDetailsException();
+        if(!foundCustomer.getPassword().equals(request.getPassword()));
         foundCustomer.setLocked(false);
         customerRepository.save(foundCustomer);
     }
@@ -67,3 +70,4 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
 }
+    
