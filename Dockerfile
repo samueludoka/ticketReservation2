@@ -1,8 +1,12 @@
 FROM maven:3.8.7 as build
-COPY src/main/java/org/smartapplication .
+COPY . .
 RUN mvn -B clean  package - DskipTests
+<<<<<<< HEAD
 FROM openjdk:17
+=======
+FROM openjdk:17-jdk-slim
+>>>>>>> 54f96c580fae2ed46dbe2801c646c4c4fff6af07
 WORKDIR /app
-COPY --from=build /app/target/*.jar LogisticsDelivery.jar
+COPY --from=build ./target/*.jar ticketReservation.jar
 ENV SERVER_PORT=8282
-CMD ["java","-jar","app.jar"]
+CMD ["java","-jar","ticketReservation.jar"]
