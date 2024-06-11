@@ -38,7 +38,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t donsmart/app:latest .
+        run: docker build -t donsmart/ticketresevation2:latest .
 
       - name: Push Docker image to Docker Hub
-        run: docker push joshrichhy/fibonacci:latest
+        run: docker push donsmart/ticketresevation2:latest
