@@ -14,7 +14,7 @@
     <name>shoppers-Delight</name>
     <description>xplorers e-commerce application</description>
     <properties>
-        <java.version>21</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
