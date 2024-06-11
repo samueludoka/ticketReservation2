@@ -1,5 +1,5 @@
 FROM maven:3.8.7 as build
-COPY src/main/java/org/smartapplication .
+COPY . .
 RUN mvn -B clean  package - DskipTests
 FROM openjdk:17
 WORKDIR /app
