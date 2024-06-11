@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d492f27f-24ab-42e2-b403-ffbb2b6a1ae9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/BookTicketRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/BookTicketRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/CreateLoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/dtos/request/CreateLoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/model/CustomerNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/model/CustomerNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/smartapplication/services/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/CustomerServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/smartapplication/services/CustomerServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,6 +231,9 @@
       <workItem from="1713166033262" duration="3923000" />
       <workItem from="1713199723129" duration="1750000" />
       <workItem from="1713225985791" duration="42000" />
+      <workItem from="1714461943595" duration="104000" />
+      <workItem from="1715964372148" duration="1647000" />
+      <workItem from="1715970721838" duration="3941000" />
     </task>
     <servers />
   </component>
