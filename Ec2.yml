@@ -1,3 +1,5 @@
+This is my own is working thou
+
 name: Deploy Docker Image to EC2
 
 on:
@@ -61,6 +63,3 @@ jobs:
                       sudo usermod -aG docker ${INSTANCE_USER}
                       sudo systemctl enable docker
                       echo $DOCKER_PASSWORD | sudo docker login --username $DOCKER_USERNAME
-
-     
-      
