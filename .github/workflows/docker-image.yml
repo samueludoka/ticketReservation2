@@ -24,8 +24,8 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/ticketreservation2 .
-        docker push ${{ secrets.DOCKER_USERNAME }}/ticketreservation2
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/ticketreservation2:latest .
+        docker push ${{ secrets.DOCKER_USERNAME }}/ticketreservation2:latest
 
     - name: Install AWS CLI
       run: |
